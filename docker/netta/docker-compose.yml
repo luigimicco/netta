@@ -27,6 +27,9 @@ x-n8n: &service-netta
     - N8N_RUNNERS_ENABLED=true
     - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
     - OLLAMA_HOST=ollama:11434
+    - N8N_USER_MANAGEMENT_DISABLED=false
+    - N8N_OWNER_MODE=false
+
   env_file:
     - .env
 

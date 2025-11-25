@@ -57,7 +57,7 @@ services:
     volumes:
       - ./n8n/demo-data:/demo-data
     depends_on:
-      postgres:
+      postgresnetta:
         condition: service_healthy
 
   netta:

@@ -27,8 +27,8 @@ x-n8n: &service-netta
     - OLLAMA_HOST=ollama:11434
     - N8N_USER_MANAGEMENT_DISABLED=false
     - N8N_OWNER_MODE=false
-    - N8N_HOST=netta.luigi.ip-ddns.com/
-    - WEBHOOK_URL=netta.luigi.ip-ddns.com/
+    - N8N_HOST=https://netta.luigi.ip-ddns.com/
+    - WEBHOOK_URL=https://netta.luigi.ip-ddns.com/
 
   env_file:
     - .env

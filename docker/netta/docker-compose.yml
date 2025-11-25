@@ -18,8 +18,6 @@ x-n8n: &service-netta
     - DB_POSTGRESDB_USER=${POSTGRES_USER}
     - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD}
     - N8N_BASIC_AUTH_ACTIVE=true
-    - N8N_BASIC_AUTH_USER=luigi.micco@gmail.com
-    - N8N_BASIC_AUTH_PASSWORD=password    
     - N8N_DIAGNOSTICS_ENABLED=false
     - N8N_PERSONALIZATION_ENABLED=false
     - N8N_ENCRYPTION_KEY
@@ -29,7 +27,8 @@ x-n8n: &service-netta
     - OLLAMA_HOST=ollama:11434
     - N8N_USER_MANAGEMENT_DISABLED=false
     - N8N_OWNER_MODE=false
-    - N8N_HOST=https://netta.luigi.ip-ddns.com/
+    - N8N_HOST=netta.luigi.ip-ddns.com/
+    - WEBHOOK_URL=netta.luigi.ip-ddns.com/
 
   env_file:
     - .env
